@@ -63,7 +63,7 @@ Na camada Interactor, assume-se a responsabilidade pela execução. Nela estão 
     Atom refere-se a um estado que possui reatividade própria, contribuindo para a dinâmica do objeto.
 
 - #### Actions: 
-    Actions têm o propósito de ser funções puras para modificar nossos estados ou reatividades.
+    Actions têm o propósito de ser funções para modificar nossos estados ou reatividades.
 
 - #### DTO: 
     O Data Transfer Object é um padrão de design usado para transferir dados entre camadas, assegurando uma comunicação eficiente.
