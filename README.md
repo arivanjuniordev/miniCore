@@ -21,7 +21,7 @@ fica responsável por declarar as entradas, saídas e interações da aplicaçã
 Usando o Flutter como exemplo, usariamos os Widgets, Pages e subpages.
 
 ### User Interaction
-Onde encontramos nossos estados, reatividades e ações(onde usaremos funções puras para modificar nossos estados ou reatividades).
+Onde encontramos nossos estados, reatividades e ações(onde usaremos funções para modificar nossos estados ou reatividades).
 
 ### Adaptation
 Onde encontramos nossas adaptações, como serialização e nossa comunicação com apis e banco de dados locais.
