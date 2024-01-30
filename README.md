@@ -26,6 +26,8 @@ Onde encontramos nossos estados, reatividades e ações(onde usaremos funções 
 ### Adaptation
 Onde encontramos nossas adaptações, como serialização e nossa comunicação com apis e banco de dados locais.
 
+
+
 ## Proposta de estrutura de pasta e pattern para utilização da arquiterura
 
 As estrutura de pastas deve ficar como no exemplo abaixo.
@@ -55,7 +57,7 @@ As estrutura de pastas deve ficar como no exemplo abaixo.
 Na camada Public, encontram-se as páginas e subpáginas do aplicativo, sendo responsável pela apresentação visual e interativa.
 
 ## Interactor
-Na camada Interactor, assume-se a responsabilidade pela execução das regras de negócios. Nela estão presentes patters como como ASP - Atomic State Pattern, DTO(Data Transfer Object), Models, Prototype e para o baixo acomplamentos colocamos os contratos do repositório e dos serviços.
+Na camada Interactor, assume-se a responsabilidade pela execução. Nela estão presentes patters como como ASP - Atomic State Pattern, DTO(Data Transfer Object), Models, Prototype e para o baixo acomplamentos colocamos os contratos do repositório e dos serviços.
 
 - #### Atoms: 
     Atom refere-se a um estado que possui reatividade própria, contribuindo para a dinâmica do objeto.
