@@ -15,7 +15,7 @@ A camada User Interaction é o espaço designado para a gestão de estados e aç
 Por outro lado, a camada Adaptation desempenhará um papel crucial, conectando-se a interfaces com APIs e bancos de dados. Essa camada é responsável por facilitar a comunicação e a adaptação eficiente de dados entre o sistema e fontes externas, garantindo uma integração suave e eficaz e a nossa camada External como falado anteriormente assume a responsabilidade de armazenar dados voláteis que estão sujeitos a constantes alterações.
 
 Outro ponto importante nessa arquitetura será o estado global, com isso ganhamos:
-Acessibilidade Universal: O estado global permite que os dados sejam acessados de qualquer lugar da aplicação. Isso pode ser útil quando você precisa compartilhar informações entre diferentes partes da interface do usuário ou entre várias páginas.
+Acessibilidade Universal: O estado global permite que os dados sejam acessados de qualquer lugar da aplicação. Isso pode ser útil quando você precisa compartilhar informações entre diferentes partes da interface do usuário ou entre várias páginas. <br>
 
 Redução da Complexidade: Em vez de passar dados através de vários componentes como parâmetros, o uso de um estado global pode simplificar o código, tornando-o mais legível e fácil de entender.
 
