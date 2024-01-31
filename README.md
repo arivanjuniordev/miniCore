@@ -124,7 +124,7 @@ Ao adotar a arquitetura MiniCore, os desenvolvedores ganham um desenvolvimento d
 
 ## Exemplos
 
-
+Veja alguns [exemplos](https://github.com/FelCarv01/mini-core-examples).
 
 
 
