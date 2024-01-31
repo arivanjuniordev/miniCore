@@ -1,4 +1,4 @@
-# miniCore
+# MiniCore
 
 Arquitetura MiniCore
 
