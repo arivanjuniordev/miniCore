@@ -15,15 +15,6 @@ A camada User Interaction é o espaço designado para a gestão de estados e aç
 
 Por outro lado, a camada Adaptation desempenhará um papel crucial, conectando-se a interfaces de APIs e bancos de dados. Essa camada é responsável por facilitar a comunicação e a adaptação eficiente de dados entre o User Interector e fontes externas, garantindo uma integração suave e eficaz e a nossa camada External como falado anteriormente assume a responsabilidade de consumir componentes externos.
 
-Outro ponto importante nessa arquitetura será o estado global, com isso ganhamos: <br><br>
-Acessibilidade Universal: O estado global permite que os dados sejam acessados de qualquer lugar da aplicação. Isso pode ser útil quando você precisa compartilhar informações entre diferentes partes da interface do usuário ou entre várias páginas.
-
-Redução da Complexidade: Em vez de passar dados através de vários componentes como parâmetros, o uso de um estado global pode simplificar o código, tornando-o mais legível e fácil de entender.
-
-Facilidade de Manutenção: Ao centralizar o estado em um local global, torna-se mais fácil manter e modificar o estado da aplicação. Isso pode facilitar a resolução de bugs e a implementação de novos recursos.
-
-Melhor Desempenho: Dependendo da implementação, um estado global bem gerenciado pode levar a um melhor desempenho, especialmente em comparação com abordagens onde os dados precisam ser passados através de muitos componentes.
-
 ## Estruturando nossa Arquitetura
 
 ### External
@@ -120,6 +111,16 @@ Na camada Core, encontram-se dados globais e reutilizáveis fornecidos para toda
 
 - #### Facilita Testes (Sem a Necessidade de Mockar os Atoms):
     Simplifica a realização de testes, eliminando a necessidade de simular ou simbolizar (mockar) os Atoms, tornando o processo de teste mais eficiente e menos complexo.
+
+Outro ponto importante será o estado global, com isso ganhamos: <br><br>
+Acessibilidade Universal: O estado global permite que os dados sejam acessados de qualquer lugar da aplicação. Isso pode ser útil quando você precisa compartilhar informações entre diferentes partes da interface do usuário ou entre várias páginas.
+
+Redução da Complexidade: Em vez de passar dados através de vários componentes como parâmetros, o uso de um estado global pode simplificar o código, tornando-o mais legível e fácil de entender.
+
+Facilidade de Manutenção: Ao centralizar o estado em um local global, torna-se mais fácil manter e modificar o estado da aplicação. Isso pode facilitar a resolução de bugs e a implementação de novos recursos.
+
+Melhor Desempenho: Dependendo da implementação, um estado global bem gerenciado pode levar a um melhor desempenho, especialmente em comparação com abordagens onde os dados precisam ser passados através de muitos componentes.
+
 
 <br>
 
