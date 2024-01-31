@@ -122,6 +122,7 @@ Na camada Core, encontram-se dados globais e reutilizáveis fornecidos para toda
 
 Ao adotar a arquitetura MiniCore, os desenvolvedores ganham um desenvolvimento de sistemas mais robustos, eficientes e de fácil manutenção, promovendo uma experiência de desenvolvimento mais positiva e sustentável.
 
+## Exemplos
 
 
 
