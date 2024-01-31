@@ -101,6 +101,26 @@ A camada Data assume a responsabilidade de interagir tanto com fontes externas (
 ## Core
 Na camada Core, encontram-se dados globais e reutilizáveis fornecidos para todas as camadas da aplicação, incluindo como exemplo: temas, widgets, design system e dados compartilhados. Essa camada é fundamental para manter a coesão e consistência em toda a aplicação.
 
+## Benefícios da Utilização da Arquitetura MiniCore:
+
+- #### Facilidade de Entendimento: 
+    Proporciona uma estrutura clara e intuitiva, facilitando a compreensão do código para desenvolvedores.
+
+- #### Manutenibilidade:
+    A divisão em camadas e a clareza das responsabilidades tornam o código mais fácil de manter e atualizar.
+
+- #### Escalabilidade de Código:
+    A arquitetura é projetada para lidar com o crescimento da aplicação, garantindo que ela possa escalar de maneira eficaz.
+
+- #### Acesso Fácil a Variáveis e Métodos Globais:
+    Facilita o acesso a variáveis e métodos globais, promovendo uma comunicação eficiente entre as diferentes partes do sistema.
+
+- #### Facilita Testes (Sem a Necessidade de Mockar os Atoms):
+    Simplifica a realização de testes, eliminando a necessidade de simular ou simbolizar (mockar) os Atoms, tornando o processo de teste mais eficiente e menos complexo.
+
+<br>
+
+Ao adotar a arquitetura MiniCore, os desenvolvedores ganham um desenvolvimento de sistemas mais robustos, eficientes e de fácil manutenção, promovendo uma experiência de desenvolvimento mais positiva e sustentável.
 
 
 
