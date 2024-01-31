@@ -33,7 +33,7 @@ Usando o Flutter como exemplo, usariamos os Widgets, Pages e subpages.
 Onde encontramos nossos estados, reatividades e ações(onde usaremos funções para modificar nossos estados ou reatividades).
 
 ### Adaptation
-Onde encontramos nossas adaptações, como serialização e nossa comunicação com apis e banco de dados locais.
+Onde encontramos nossas adaptações, como serialização e nossa comunicação com apis e banco de dados locais. A camada de adaptação é muito importante para a saúde do projeto, caso alguém pare de dar suporte algum serviço que utilizamos em nossa aplicação, dessa forma fica muito fácil de trocar utilizando a injeção de dependência adequada, e assim não afetaria nosso código de interação independente das mudanças internas.
 
 
 
@@ -51,6 +51,7 @@ As estrutura de pastas deve ficar como no exemplo abaixo.
     │   ├── themes
     │   └── widgets
     ├── data/
+    │   ├── adapters
     │   ├── repositories
     │   └── services
     └── interactor/
@@ -84,7 +85,7 @@ Na camada Interactor, assume-se a responsabilidade pela execução. Nela estão 
     É um padrão de design creacional que visa criar novos objetos duplicando, ou clonando, objetos existentes
 
 - #### Contratos: 
-    Nessa seção incluímos interfaces do repositório e serviços, delineando claramente os compromissos necessários.
+    Nessa seção incluímos interfaces do repositório e serviços, delineando claramente os compromissos necessários. Ao trabalharmos com contratos temos a possibilidade de trocar uma base de dados por exemplo sem comprometer a nossa regra de negocio alterando apenas a nossa implementação do repositório ou serviço.
 
 ## Data
 A camada Data assume a responsabilidade de interagir tanto com fontes externas (APIs) quanto internas (Banco de dados locais).
