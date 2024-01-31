@@ -4,15 +4,16 @@ Arquitetura MiniCore
 
 O principal objetivo dessa arquitetura é seu foco no FrontEnd. A estrutura é composta por três camadas distintas: User Interactor, Adaptation e External, proporcionando assim, um baixo acoplamento. Esse design visa aprimorar a experiência de desenvolvimento, promovendo eficiência e flexibilidade através da clara separação das responsabilidades em cada camada.
 
-A camada User Interactor no miniCore assume a responsabilidade crucial de gerenciar a interação com o usuário. A camada Adaptation desempenha um papel fundamental ao adaptar informações provenientes da camada externa para a camada User Interactor. Já a camada External assume a responsabilidade de armazenar dados voláteis que estão sujeitos a constantes alterações.
+A camada User Interactor no miniCore assume a responsabilidade crucial de gerenciar a interação com o usuário. A camada Adaptation desempenha um papel fundamental ao adaptar informações provenientes da camada externa para a camada User Interactor. Já a camada External assume a responsabilidade de consumir componentes externos (clientes http, bancos de dados, plugins nativos e etc...).
 
 Dentro dos limites arquiteturais estabelecidos, destaca-se que a camada User Interactor não possui acesso direto à camada External. Para contornar essa restrição, a camada Adaptation atua como intermediária, facilitando a comunicação entre a camada User Interactor e a camada External.
 
+<p align="center">
 <img src="image.png" width="512" alt="Achitecture diagram"/>
 
 A camada User Interaction é o espaço designado para a gestão de estados e ações do usuário. Nela, definiremos e controlaremos as interações do usuário durante o uso do sistema.
 
-Por outro lado, a camada Adaptation desempenhará um papel crucial, conectando-se a interfaces com APIs e bancos de dados. Essa camada é responsável por facilitar a comunicação e a adaptação eficiente de dados entre o sistema e fontes externas, garantindo uma integração suave e eficaz e a nossa camada External como falado anteriormente assume a responsabilidade de armazenar dados voláteis que estão sujeitos a constantes alterações.
+Por outro lado, a camada Adaptation desempenhará um papel crucial, conectando-se a interfaces de APIs e bancos de dados. Essa camada é responsável por facilitar a comunicação e a adaptação eficiente de dados entre o User Interector e fontes externas, garantindo uma integração suave e eficaz e a nossa camada External como falado anteriormente assume a responsabilidade de consumir componentes externos.
 
 Outro ponto importante nessa arquitetura será o estado global, com isso ganhamos: <br><br>
 Acessibilidade Universal: O estado global permite que os dados sejam acessados de qualquer lugar da aplicação. Isso pode ser útil quando você precisa compartilhar informações entre diferentes partes da interface do usuário ou entre várias páginas.
