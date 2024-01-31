@@ -90,7 +90,7 @@ Na camada Interactor, assume-se a responsabilidade pela execução. Nela estão 
 A camada Data assume a responsabilidade de interagir tanto com fontes externas (APIs) quanto internas (Banco de dados locais).
 
 - #### Adapter:
-    Define que precisa ser adaptada.
+    Os adaptadores são componentes auxiliares que devem realizar a conversão de um dado do mundo externo para um formato que é compreendido pelo domínio da aplicação. É nesse componente que inserimos o código responsável por realizar a serialização e desserialização dos dados provenientes de uma API ou banco de dados. Normalmente, um adaptador deve ser criado para cada entidade da aplicação, mas é permitido a existência múltiplos adaptadores para uma mesma entidade, visto que múltiplas fontes de dados podem ser utilizadas.
 
 - #### Repository: 
     O padrão Repository proporciona uma abstração entre a lógica de negócios e o acesso aos dados, simplificando a gestão e manipulação desses dados.
