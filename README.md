@@ -30,50 +30,12 @@ Dentro dos limites arquiteturais estabelecidos, destaca-se que a camada User Int
 Visando aprimorar o desenvolvimento com eficiência e flexibilidade, a arquitetura assegura um baixo acoplamento através da clara separação de responsabilidades em cada camada.
 
 
-## Estruturando nossa Arquitetura
+## Estrutura da Arquitetura
 
-### External
-fica responsável por declarar as entradas, saídas e interações da aplicação.
-Usando o Flutter como exemplo, usariamos os Widgets, Pages e subpages.
+### Public
+Encontram-se as páginas e subpáginas do aplicativo, sendo responsável pela apresentação visual e interativa.
 
-### User Interaction
-Onde encontramos nossos estados, reatividades e ações(onde usaremos funções para modificar nossos estados ou reatividades).
-
-### Adaptation
-Onde encontramos nossas adaptações, como serialização e nossa comunicação com apis e banco de dados locais. A camada de adaptação é muito importante para a saúde do projeto, caso alguém pare de dar suporte algum serviço que utilizamos em nossa aplicação, dessa forma fica muito fácil de trocar utilizando a injeção de dependência adequada, e assim não afetaria nosso código de interação independente das mudanças internas.
-
-
-
-## Proposta de estrutura de pasta e pattern para utilização da arquiterura
-
-As estrutura de pastas deve ficar como no exemplo abaixo.
-
-```
-.
-└── app/
-    ├── public/
-    │   └── pages
-    ├── core/
-    │   ├── assets
-    │   ├── themes
-    │   └── widgets
-    ├── data/
-    │   ├── adapters
-    │   ├── repositories
-    │   └── services
-    └── interactor/
-        ├── atoms
-        ├── actions
-        ├── dtos
-        ├── models 
-        ├── repositories
-        └── services
-```
-
-## Public
-Na camada Public, encontram-se as páginas e subpáginas do aplicativo, sendo responsável pela apresentação visual e interativa.
-
-## Interactor
+### Interactor
 Na camada Interactor, assume-se a responsabilidade pela execução. Nela estão presentes patters como como ASP - Atomic State Pattern, DTO(Data Transfer Object), Models, Prototype e para o baixo acomplamentos colocamos os contratos do repositório e dos serviços.
 
 - #### Atoms: 
@@ -142,6 +104,30 @@ Melhor Desempenho: Dependendo da implementação, um estado global bem gerenciad
 Ao adotar a arquitetura MiniCore, os desenvolvedores ganham um desenvolvimento de sistemas mais robustos, eficientes e de fácil manutenção, promovendo uma experiência de desenvolvimento mais positiva e sustentável.
 
 ## Exemplos
+
+De acordo com a arquitetura proposta, define-se a estrutura de pastas.
+
+```
+.
+└── app/
+    ├── public/
+    │   └── pages/
+    ├── core/
+    │   ├── assets/
+    │   ├── themes/
+    │   └── widgets/
+    ├── data/
+    │   ├── adapters/
+    │   ├── repositories/
+    │   └── services/
+    └── interactor/
+        ├── atoms/
+        ├── actions/
+        ├── dtos/
+        ├── models/ 
+        ├── repositories/
+        └── services/
+```
 
 Veja alguns [exemplos](https://github.com/FelCarv01/mini-core-examples).
 
