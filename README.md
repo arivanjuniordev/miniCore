@@ -1,19 +1,25 @@
-# MiniCore
+# Arquitetura - MiniCore
 
-Arquitetura MiniCore
+**Objetivo**: Propor uma arquitetura simplificada e de fácil entendimento, tendo como foco o FrontEnd. A estrutura proposta é baseada em três camadas distintas, sendo elas: User Interactor, Adaptation e External.
 
-O principal objetivo dessa arquitetura é seu foco no FrontEnd. A estrutura é composta por três camadas distintas: User Interactor, Adaptation e External, proporcionando assim, um baixo acoplamento. Esse design visa aprimorar a experiência de desenvolvimento, promovendo eficiência e flexibilidade através da clara separação das responsabilidades em cada camada.
+### Camadas
 
-A camada User Interactor no miniCore assume a responsabilidade crucial de gerenciar a interação com o usuário. A camada Adaptation desempenha um papel fundamental ao adaptar informações provenientes da camada externa para a camada User Interactor. Já a camada External assume a responsabilidade de consumir componentes externos (clientes http, bancos de dados, plugins nativos e etc...).
+**User Interactor**: Deve ser responsável por declarar as entradas, saídas e interações da aplicação.
 
-Dentro dos limites arquiteturais estabelecidos, destaca-se que a camada User Interactor não possui acesso direto à camada External. Para contornar essa restrição, a camada Adaptation atua como intermediária, facilitando a comunicação entre a camada User Interactor e a camada External.
+**Adaptation**: Deve ser responsável por realizar a tradução e comunicação entre as camadas de User Interactor e External.
+
+**External**: Deve ser responsável por lidar com as informações externas à sua aplicação.
 
 <p align="center">
 <img src="image.png" width="512" alt="Achitecture diagram"/>
+</p>
 
-A camada User Interaction é o espaço designado para a gestão de estados e ações do usuário. Nela, definiremos e controlaremos as interações do usuário durante o uso do sistema.
+### Limites
 
-Por outro lado, a camada Adaptation desempenhará um papel crucial, conectando-se a interfaces de APIs e bancos de dados. Essa camada é responsável por facilitar a comunicação e a adaptação eficiente de dados entre o User Interector e fontes externas, garantindo uma integração suave e eficaz e a nossa camada External como falado anteriormente assume a responsabilidade de consumir componentes externos.
+Dentro dos limites arquiteturais estabelecidos, destaca-se que a camada User Interactor não deve possuir acesso direto à camada External. Para contornar essa restrição, a camada Adaptation atua como intermediária, realizando a comunicação entre as camadas User Interactor e External.
+
+Visando aprimorar o desenvolvimento com eficiência e flexibilidade, a arquitetura assegura um baixo acoplamento através da clara separação de responsabilidades em cada camada.
+
 
 ## Estruturando nossa Arquitetura
 
