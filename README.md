@@ -65,17 +65,19 @@ O Service é um padrão que encapsula a lógica de negócios para promover modul
 Esta camada deve interagir com as fontes externas.
 
 - #### Adapter:
-    Os adaptadores são componentes auxiliares que devem realizar a conversão de um dado do mundo externo para um formato que é compreendido pelo domínio da aplicação. É nesse componente que inserimos o código responsável por realizar a serialização e desserialização dos dados provenientes de uma API ou banco de dados. Normalmente, um adaptador deve ser criado para cada entidade da aplicação, mas é permitido a existência múltiplos adaptadores para uma mesma entidade, visto que múltiplas fontes de dados podem ser utilizadas.
+    O padrão Adapter é uma estrutura de design que possibilita o uso da interface de uma classe existente como se fosse outra interface. Funciona como um intermediário, permitindo que objetos com interfaces incompatíveis colaborem entre si e convertendo a interface de uma classe para algo que outra classe espera.
 
+- #### Tratamento de erros:
+    Deve haver tratamento de erros nesta seção para centralizar o local onde serão gerenciados os erros.
+  
 - #### Repository: 
-    O padrão Repository proporciona uma abstração entre a lógica de negócios e o acesso aos dados, simplificando a gestão e manipulação desses dados. E aqui é aonde será tratado o error da aplicação.
+    Deve incorporar a classe concreta, derivando da abstração para viabilizar a comunicação entre as camadas.
     
-
 - #### Service: 
-    O padrão Service, amplamente utilizado em arquiteturas de software, encapsula a lógica de negócios para promover modularidade, reutilização e facilidade de manutenção.
+    Deve incorporar a classe concreta, derivando da abstração para viabilizar a comunicação entre as camadas.
 
 ## Core
-Na camada Core, encontram-se dados globais e reutilizáveis fornecidos para todas as camadas da aplicação, incluindo como exemplo: temas, widgets, design system e dados compartilhados. Essa camada é fundamental para manter a coesão e consistência em toda a aplicação.
+Deve conter informações globais e reutilizáveis para todas as camadas da aplicação.
 
 ## Benefícios da Utilização da Arquitetura MiniCore:
 
