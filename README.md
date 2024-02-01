@@ -32,32 +32,37 @@ Visando aprimorar o desenvolvimento com eficiência e flexibilidade, a arquitetu
 
 ## Estrutura da Arquitetura
 
-### Public
-Encontram-se as páginas e subpáginas do aplicativo, sendo responsável pela apresentação visual e interativa.
+### UI (User Interface)
+Esta camada deve conter os elementos visuais da aplicação.
 
 ### Interactor
-Na camada Interactor, assume-se a responsabilidade pela execução. Nela estão presentes patters como como ASP - Atomic State Pattern, DTO(Data Transfer Object), Models, Prototype e para o baixo acomplamentos colocamos os contratos do repositório e dos serviços.
+Esta camada deve incorporar os elementos de estados ou reatividades, a representação das regras de negócio, abstrações para comunicação entre as outras camadas e as ações executadas pela sua UI.
+
 
 - #### Atoms: 
-    Atom refere-se a um estado que possui reatividade própria, contribuindo para a dinâmica do objeto.
+    Atom refere-se a um estado que possui reatividade própria.
 
 - #### Actions: 
-    Actions têm o propósito de ser funções para modificar nossos estados ou reatividades.
+    Actions têm o propósito de modificar nossos estados ou reatividades.
 
 - #### DTO: 
-    O Data Transfer Object é um padrão de design usado para transferir dados entre camadas, assegurando uma comunicação eficiente.
+    Data Transfer Object é um padrão de design usado para transferir dados entre camadas.
 
 - #### Models: 
-    Models representa a estrutura de dados e as regras de negócios da aplicação.
+    Representam as regras de negócio.
 
-- #### Prototype:
-    É um padrão de design creacional que visa criar novos objetos duplicando, ou clonando, objetos existentes
+- #### Abstrações:
+    Nesta seção, incluímos abstrações para o repository e services:
+  
+**Repository**:
+O Repository é um padrão que separa a lógica de negócios do acesso aos dados.
 
-- #### Contratos: 
-    Nessa seção incluímos interfaces do repositório e serviços, delineando claramente os compromissos necessários. Ao trabalharmos com contratos temos a possibilidade de trocar uma base de dados por exemplo sem comprometer a nossa regra de negocio alterando apenas a nossa implementação do repositório ou serviço.
+**Service**:
+O Service é um padrão que encapsula a lógica de negócios para promover modularidade e reutilização.
+
 
 ## Data
-A camada Data assume a responsabilidade de interagir tanto com fontes externas (APIs) quanto internas (Banco de dados locais).
+Esta camada deve interagir com as fontes externas.
 
 - #### Adapter:
     Os adaptadores são componentes auxiliares que devem realizar a conversão de um dado do mundo externo para um formato que é compreendido pelo domínio da aplicação. É nesse componente que inserimos o código responsável por realizar a serialização e desserialização dos dados provenientes de uma API ou banco de dados. Normalmente, um adaptador deve ser criado para cada entidade da aplicação, mas é permitido a existência múltiplos adaptadores para uma mesma entidade, visto que múltiplas fontes de dados podem ser utilizadas.
