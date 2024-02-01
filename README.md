@@ -71,10 +71,10 @@ Esta camada deve interagir com as fontes externas.
     Deve haver tratamento de erros nesta seção para centralizar o local onde serão gerenciados os erros.
   
 - #### Repository: 
-    Deve incorporar a classe concreta, derivando da abstração para viabilizar a comunicação entre as camadas.
+    Deve conter a classe concreta, proveniente da abstração, para a comunicação entre as camadas.
     
 - #### Service: 
-    Deve incorporar a classe concreta, derivando da abstração para viabilizar a comunicação entre as camadas.
+    Deve conter a classe concreta, proveniente da abstração, para a comunicação entre as camadas.
 
 ## Core
 Deve conter informações globais e reutilizáveis para todas as camadas da aplicação.
