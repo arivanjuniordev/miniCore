@@ -9,9 +9,18 @@
 **Adaptation**: Deve ser responsável por realizar a tradução e comunicação entre as camadas de User Interactor e External.
 
 **External**: Deve ser responsável por lidar com as informações externas à sua aplicação.
+<br>
+<br>
 
 <p align="center">
-<img src="image.png" width="512" alt="Achitecture diagram"/>
+<img src="vai.png" width="512" alt="Achitecture diagram"/>
+</p>
+
+<br>
+<br>
+
+<p align="center">
+<img src="volta.png" width="512" alt="Achitecture diagram"/>
 </p>
 
 ### Limites
