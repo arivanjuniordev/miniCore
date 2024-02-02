@@ -50,7 +50,7 @@ Esta camada deve abranger os estados ou reatividades da aplicação, a represent
 - #### Models: 
     Representam as regras de negócio.
 
-- #### Abstrações:
+- #### Interfaces:
     Nesta seção, incluímos abstrações para o repository e services:
   
 **Repository**:
