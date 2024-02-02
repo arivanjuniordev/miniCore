@@ -61,7 +61,7 @@ O Service é um padrão que encapsula a lógica de negócios para promover modul
 
 
 ## Data
-Esta camada deve interagir com as fontes externas.
+Devem interagir com as fontes externas.
 
 - #### Adapter:
     O padrão Adapter é uma estrutura de design que possibilita o uso da interface de uma classe existente como se fosse outra interface. Funciona como um intermediário, permitindo que objetos com interfaces incompatíveis colaborem entre si e convertendo a interface de uma classe para algo que outra classe espera.
