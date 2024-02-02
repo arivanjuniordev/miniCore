@@ -36,14 +36,13 @@ Visando aprimorar o desenvolvimento com eficiência e flexibilidade, a arquitetu
 Esta camada deve conter os elementos visuais da aplicação.
 
 ### Interactor
-Esta camada deve incorporar os elementos de estados ou reatividades, a representação das regras de negócio, abstrações para comunicação entre as outras camadas e as ações executadas pela sua UI.
-
+Esta camada deve abranger os estados ou reatividades da aplicação, a representação das regras de negócio, abstrações para comunicação entre as outras camadas e as operações executadas pela sua UI.
 
 - #### Atoms: 
-    Atom refere-se a um estado que possui reatividade própria.
+    Devem armazenar um estado da aplicação.
 
 - #### Actions: 
-    Actions têm o propósito de modificar nossos estados ou reatividades.
+    Devem ter a finalidade de alterar os estados da aplicação.
 
 - #### DTO: 
     Data Transfer Object é um padrão de design usado para transferir dados entre camadas.
