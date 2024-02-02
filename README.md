@@ -57,10 +57,10 @@ Esta camada deve abranger os estados ou reatividades da aplicação, a represent
 Devem interagir com as fontes externas.
 
 - #### Adapter:
-    O padrão Adapter é uma estrutura de design que possibilita o uso da interface de uma classe existente como se fosse outra interface. Funciona como um intermediário, permitindo que objetos com interfaces incompatíveis colaborem entre si e convertendo a interface de uma classe para algo que outra classe espera.
+   Deve haver as adaptaçãoes para garantir que os dados externos sigam os padrões definidos pela aplicação.
 
 - #### Tratamento de erros:
-    Deve haver tratamento de erros nesta seção para centralizar o local onde serão gerenciados os erros.
+    Como boa prática, devemos tratar os erros da nossa aplicação garantindo estabilidade e reduzindo a ocorrência de falhas.
   
 - #### Repository: 
     Deve conter a classe concreta, proveniente da abstração, para a comunicação entre as camadas.
