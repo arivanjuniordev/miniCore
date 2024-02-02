@@ -51,15 +51,8 @@ Esta camada deve abranger os estados ou reatividades da aplicação, a represent
     Representam as regras de negócio.
 
 - #### Interfaces:
-    Nesta seção, incluímos abstrações para o repository e services:
-  
-**Repository**:
-O Repository é um padrão que separa a lógica de negócios do acesso aos dados.
-
-**Service**:
-O Service é um padrão que encapsula a lógica de negócios para promover modularidade e reutilização.
-
-
+    Devem conter interfaces para alcançar um baixo acoplamento, reduzindo a dependência direta e proporcionando uma substituição fácil de implementações.
+ 
 ## Data
 Devem interagir com as fontes externas.
 
