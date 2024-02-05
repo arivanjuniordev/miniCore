@@ -1,10 +1,10 @@
-# Arquitetura - MiniCore
+# Arquitetura MiniCore
 
 **Objetivo**: Propor uma arquitetura simplificada e de fácil entendimento, tendo como foco o FrontEnd. A estrutura proposta é baseada em três camadas distintas, sendo elas: User Interactor, Adaptation e External.
 
 ### Camadas
 
-**User Interactor**: Deve ser responsável por declarar as entradas, saídas e interações da aplicação.
+**User Interactor**: Deve ser responsável pelas entradas, saídas e interações da aplicação.
 
 **Adaptation**: Deve ser responsável por realizar a tradução e comunicação entre as camadas de User Interactor e External.
 
