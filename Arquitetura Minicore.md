@@ -28,3 +28,8 @@
 Dentro dos limites arquiteturais estabelecidos, destaca-se que a camada User Interactor não deve possuir acesso direto à camada External. Para contornar essa restrição, a camada Adaptation atua como intermediária, realizando a comunicação entre as camadas User Interactor e External.
 
 Visando aprimorar o desenvolvimento com eficiência e flexibilidade, a arquitetura assegura um baixo acoplamento através da clara separação de responsabilidades em cada camada.
+<br>
+<br>
+**Termos Utilizados**
+<br>
+[Baixo acoplamento](https://pt.wikipedia.org/wiki/Acoplamento_(programa%C3%A7%C3%A3o_de_computadores)#:~:text=O%20baixo%20acoplamento%20geralmente%20se,legibilidade%20e%20facilidade%20de%20manuten%C3%A7%C3%A3o.)
